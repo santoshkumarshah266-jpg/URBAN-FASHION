@@ -38,13 +38,13 @@ const Blog = () => {
   ];
 
   return (
-    <div className="pt-32 pb-20 bg-white">
+    <div className="pt-32 pb-20 bg-black">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16" data-aos="fade-up">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 text-[#FFBB33]">
             Customer Reviews
           </h1>
-          <p className="text-[#8A8A8A] max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto">
             Real people, real style, real affordability.
           </p>
         </div>
@@ -53,7 +53,7 @@ const Blog = () => {
           {reviews.map((review, index) => (
             <div
               key={review.id}
-              className="bg-[#F5F5F5] p-8 rounded-lg hover:shadow-lg transition-all duration-300"
+              className="bg-gradient-to-br from-[#FFBB33]/10 to-transparent p-8 rounded-lg border border-[#FFBB33]/20 hover:border-[#FFBB33]/40 transition-all duration-300"
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
@@ -70,11 +70,11 @@ const Blog = () => {
                 ))}
               </div>
               
-              <p className="text-[#111111] mb-6 italic leading-relaxed">"{review.review}"</p>
+              <p className="text-gray-300 mb-6 italic leading-relaxed">"{review.review}"</p>
               
-              <div className="border-t border-[#8A8A8A]/20 pt-4">
-                <p className="text-[#111111] font-bold">{review.name}</p>
-                <p className="text-[#8A8A8A] text-sm">{review.role}</p>
+              <div className="border-t border-[#FFBB33]/20 pt-4">
+                <p className="text-[#FFBB33] font-bold">{review.name}</p>
+                <p className="text-gray-400 text-sm">{review.role}</p>
               </div>
             </div>
           ))}

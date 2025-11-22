@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white text-[#111111]">
+    <div className="min-h-screen bg-black text-white">
       <Navbar />
       <section id="home">
         <Home />

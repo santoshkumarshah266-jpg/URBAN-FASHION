@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-        scrolled ? 'bg-white/95 shadow-md py-4' : 'bg-transparent py-6'
+        scrolled ? 'bg-black/95 border-b border-[#FFBB33]/20 py-4' : 'bg-transparent py-6'
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
@@ -62,9 +62,7 @@ const Navbar = () => {
               <button
                 onClick={() => scrollToSection(link.id)}
                 className={`relative text-sm font-semibold tracking-wide transition-all duration-300 group ${
-                  scrolled 
-                    ? activeSection === link.id ? 'text-[#FFBB33]' : 'text-[#111111] hover:text-[#FFBB33]'
-                    : activeSection === link.id ? 'text-[#FFBB33]' : 'text-white hover:text-[#FFBB33]'
+                  activeSection === link.id ? 'text-[#FFBB33]' : 'text-white hover:text-[#FFBB33]'
                 }`}
               >
                 {link.name}

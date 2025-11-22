@@ -43,13 +43,13 @@ const Lookbook = () => {
   ];
 
   return (
-    <div className="pt-32 pb-20 bg-white">
+    <div className="pt-32 pb-20 bg-black">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16" data-aos="fade-up">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 text-[#FFBB33]">
             Lookbook
           </h1>
-          <p className="text-[#8A8A8A] max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto">
             Explore our latest collection. Affordable style for everyone.
           </p>
         </div>
@@ -58,14 +58,14 @@ const Lookbook = () => {
           {lookbookItems.map((item, index) => (
             <div
               key={item.id}
-              className="relative overflow-hidden group cursor-pointer rounded-lg"
+              className="relative overflow-hidden group cursor-pointer rounded-lg border border-[#FFBB33]/20 hover:border-[#FFBB33]/40 transition-all duration-300"
               data-aos="fade-up"
               data-aos-delay={index * 100}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <div className="aspect-[3/4] bg-[#F5F5F5] relative">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
+              <div className="aspect-[3/4] bg-[#1a1a1a] relative">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent z-10"></div>
                 
                 <div
                   className={`absolute inset-0 bg-cover bg-center transition-transform duration-500 ${
@@ -77,11 +77,11 @@ const Lookbook = () => {
                 ></div>
 
                 <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-                  <h3 className="text-2xl font-bold text-white mb-2">
+                  <h3 className="text-2xl font-bold text-[#FFBB33] mb-2">
                     {item.title}
                   </h3>
                   <p
-                    className={`text-white/90 transition-all duration-300 ${
+                    className={`text-gray-300 transition-all duration-300 ${
                       hoveredIndex === index
                         ? 'opacity-100 translate-y-0'
                         : 'opacity-0 translate-y-4'
