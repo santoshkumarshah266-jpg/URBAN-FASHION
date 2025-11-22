@@ -51,7 +51,7 @@ const Hero = () => {
           backgroundAttachment: 'fixed',
         }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
@@ -59,19 +59,22 @@ const Hero = () => {
           ref={logoRef}
           src="/images/logo/logo.png"
           alt="URBAN FASHION"
-          className="w-64 md:w-96 mb-12"
+          className="w-64 md:w-96 mb-8"
         />
         <h1
           ref={textRef}
-          className="hero-text text-3xl md:text-5xl lg:text-6xl text-white max-w-4xl leading-tight"
+          className="hero-text text-3xl md:text-5xl lg:text-6xl text-white max-w-4xl leading-tight mb-6"
         >
-          ONLY FOR THOSE WHO DARE TO LEAD.
+          Style That Fits Your Life
         </h1>
+        <p className="text-xl md:text-2xl text-white/90 max-w-2xl font-normal">
+          Look good every day without overspending
+        </p>
       </div>
 
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
         <svg
-          className="w-6 h-6 text-gold"
+          className="w-6 h-6 text-[#FFBB33]"
           fill="none"
           strokeLinecap="round"
           strokeLinejoin="round"

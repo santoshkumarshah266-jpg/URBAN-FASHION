@@ -6,51 +6,51 @@ const Lookbook = () => {
   const lookbookItems = [
     {
       id: 1,
-      title: 'URBAN WARRIOR',
-      description: 'Bold statement pieces for the fearless',
+      title: 'EVERYDAY ESSENTIALS',
+      description: 'Comfortable basics for daily wear',
       image: '/images/lookbook/look1.jpg',
     },
     {
       id: 2,
-      title: 'STREET LUXURY',
-      description: 'Where comfort meets high fashion',
+      title: 'CASUAL COMFORT',
+      description: 'Relaxed styles that fit your life',
       image: '/images/lookbook/look2.jpg',
     },
     {
       id: 3,
-      title: 'GOLD STANDARD',
-      description: 'Exclusive designs that shine',
+      title: 'TRENDY PICKS',
+      description: 'Current styles at great prices',
       image: '/images/lookbook/look3.jpg',
     },
     {
       id: 4,
-      title: 'NIGHT MOVES',
-      description: 'Elevated streetwear for after dark',
+      title: 'WEEKEND VIBES',
+      description: 'Easy outfits for your days off',
       image: '/images/lookbook/look4.jpg',
     },
     {
       id: 5,
-      title: 'REBEL SPIRIT',
-      description: 'For those who dare to be different',
+      title: 'SMART CASUAL',
+      description: 'Versatile pieces for any occasion',
       image: '/images/lookbook/look5.jpg',
     },
     {
       id: 6,
-      title: 'URBAN ELITE',
-      description: 'The pinnacle of street luxury',
+      title: 'FRESH STYLES',
+      description: 'New arrivals you can afford',
       image: '/images/lookbook/look6.jpg',
     },
   ];
 
   return (
-    <div className="pt-32 pb-20">
+    <div className="pt-32 pb-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16" data-aos="fade-up">
-          <h1 className="text-5xl md:text-6xl font-montserrat font-bold text-gold mb-4">
-            LOOKBOOK
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+            Lookbook
           </h1>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Explore our latest collection. Each piece tells a story of boldness and luxury.
+          <p className="text-[#8A8A8A] max-w-2xl mx-auto">
+            Explore our latest collection. Affordable style for everyone.
           </p>
         </div>
 
@@ -58,13 +58,13 @@ const Lookbook = () => {
           {lookbookItems.map((item, index) => (
             <div
               key={item.id}
-              className="relative overflow-hidden group cursor-pointer"
+              className="relative overflow-hidden group cursor-pointer rounded-lg"
               data-aos="fade-up"
               data-aos-delay={index * 100}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <div className="aspect-[3/4] bg-gray-800 relative">
+              <div className="aspect-[3/4] bg-[#F5F5F5] relative">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
                 
                 <div
@@ -77,11 +77,11 @@ const Lookbook = () => {
                 ></div>
 
                 <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-                  <h3 className="text-2xl font-montserrat font-bold text-gold mb-2">
+                  <h3 className="text-2xl font-bold text-white mb-2">
                     {item.title}
                   </h3>
                   <p
-                    className={`text-gray-300 transition-all duration-300 ${
+                    className={`text-white/90 transition-all duration-300 ${
                       hoveredIndex === index
                         ? 'opacity-100 translate-y-0'
                         : 'opacity-0 translate-y-4'

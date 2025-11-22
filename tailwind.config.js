@@ -7,13 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        gold: '#D4AF37',
-        black: '#000000',
-        white: '#FFFFFF',
+        primary: '#111111',
+        secondary: '#F5F5F5',
+        accent: '#FFBB33',
+        neutral: '#8A8A8A',
       },
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
-        helvetica: ['Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
     },
   },

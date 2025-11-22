@@ -3,49 +3,49 @@ const Blog = () => {
     {
       id: 1,
       name: 'Rajesh Shrestha',
-      role: 'Creative Director',
-      review: 'URBAN FASHION completely transformed my wardrobe. The quality is unmatched, and every piece makes me feel like I\'m leading, not following. This is what luxury streetwear should be.',
+      role: 'College Student',
+      review: 'Finally found a brand that fits my budget! The clothes are trendy and comfortable. I can actually afford to update my wardrobe without feeling guilty.',
       rating: 5,
     },
     {
       id: 2,
       name: 'Priya Gurung',
-      role: 'Fashion Influencer',
-      review: 'I\'ve never felt more confident in my style. URBAN FASHION pieces are bold, exclusive, and always turn heads. The attention to detail is incredible. Worth every penny.',
+      role: 'Young Professional',
+      review: 'Love how affordable yet stylish everything is. I can dress well for work and weekends without spending a fortune. Urban Fashion gets it!',
       rating: 5,
     },
     {
       id: 3,
       name: 'Aditya Thapa',
-      role: 'Entrepreneur',
-      review: 'Finally, a brand that understands what it means to stand out. The craftsmanship is exceptional, and the designs are fearless. URBAN FASHION is my go-to for making statements.',
+      role: 'Freelancer',
+      review: 'Great quality at prices that make sense. I appreciate that I don\'t have to choose between looking good and saving money. Highly recommend!',
       rating: 5,
     },
     {
       id: 4,
       name: 'Sanjana Rai',
-      role: 'Artist',
-      review: 'These aren\'t just clothes, they\'re armor. Every time I wear URBAN FASHION, I feel powerful and ready to conquer. The exclusivity and quality are unmatched.',
+      role: 'Teacher',
+      review: 'Perfect for everyday wear! Comfortable, trendy, and most importantly, affordable. I can buy multiple pieces without breaking my budget.',
       rating: 5,
     },
     {
       id: 5,
       name: 'Bikash Tamang',
-      role: 'Music Producer',
-      review: 'URBAN FASHION gets it. Bold, luxurious, and unapologetically different. This is the brand for people who refuse to blend in. Absolutely love everything I own.',
+      role: 'Startup Employee',
+      review: 'This is exactly what young people in Nepal need - fashion that doesn\'t cost a month\'s salary. Quality is solid and styles are current. Love it!',
       rating: 5,
     },
   ];
 
   return (
-    <div className="pt-32 pb-20">
+    <div className="pt-32 pb-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16" data-aos="fade-up">
-          <h1 className="text-5xl md:text-6xl font-montserrat font-bold text-gold mb-4">
-            CUSTOMER REVIEWS
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+            Customer Reviews
           </h1>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Hear from those who dare to lead with URBAN FASHION.
+          <p className="text-[#8A8A8A] max-w-2xl mx-auto">
+            Real people, real style, real affordability.
           </p>
         </div>
 
@@ -53,7 +53,7 @@ const Blog = () => {
           {reviews.map((review, index) => (
             <div
               key={review.id}
-              className="bg-gradient-to-br from-gold/10 to-transparent p-8 border border-gold/20 hover:border-gold/40 transition-all duration-300"
+              className="bg-[#F5F5F5] p-8 rounded-lg hover:shadow-lg transition-all duration-300"
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
@@ -61,7 +61,7 @@ const Blog = () => {
                 {[...Array(review.rating)].map((_, i) => (
                   <svg
                     key={i}
-                    className="w-5 h-5 text-gold"
+                    className="w-5 h-5 text-[#FFBB33]"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -70,11 +70,11 @@ const Blog = () => {
                 ))}
               </div>
               
-              <p className="text-gray-300 mb-6 italic">"{review.review}"</p>
+              <p className="text-[#111111] mb-6 italic leading-relaxed">"{review.review}"</p>
               
-              <div className="border-t border-gold/20 pt-4">
-                <p className="text-gold font-montserrat font-bold">{review.name}</p>
-                <p className="text-gray-400 text-sm">{review.role}</p>
+              <div className="border-t border-[#8A8A8A]/20 pt-4">
+                <p className="text-[#111111] font-bold">{review.name}</p>
+                <p className="text-[#8A8A8A] text-sm">{review.role}</p>
               </div>
             </div>
           ))}
