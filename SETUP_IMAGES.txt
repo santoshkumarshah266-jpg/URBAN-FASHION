@@ -1,0 +1,18 @@
+IMPORTANT: Save Your Images
+
+You have 2 images to save:
+
+1. LOGO IMAGE (the black background with gold "UF URBAN FASHION" text)
+   - Right-click and save the first image
+   - Save it as: public/images/logo/logo.png
+
+2. HERO IMAGE (the fashion model in urban setting)
+   - Right-click and save the second image  
+   - Save it as: public/images/hero/hero.jpg
+
+After saving both images, run:
+   npm run dev
+
+Then open: http://localhost:5173
+
+The website will work perfectly with just these 2 images!
