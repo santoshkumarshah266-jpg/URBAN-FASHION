@@ -22,42 +22,42 @@ const Contact = () => {
   };
 
   return (
-    <div className="pt-32 pb-20 bg-black">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16" data-aos="fade-up">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 text-[#FFBB33]">
+    <div className="pt-24 md:pt-32 pb-12 md:pb-20 bg-black">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-10 md:mb-16" data-aos="fade-up">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-[#FFBB33]">
             Get In Touch
           </h1>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto px-4">
             Have questions? Want to know more? We'd love to hear from you.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <div data-aos="fade-right">
-            <h2 className="text-2xl font-bold mb-6 text-white">Contact Info</h2>
+            <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-white">Contact Info</h2>
             
-            <div className="space-y-6">
+            <div className="space-y-4 md:space-y-6">
               <div>
-                <h3 className="text-[#FFBB33] font-bold mb-2">EMAIL</h3>
-                <p className="text-gray-400">santoshkumarshah266@gmail.com</p>
+                <h3 className="text-[#FFBB33] font-bold mb-2 text-sm md:text-base">EMAIL</h3>
+                <p className="text-gray-400 text-sm md:text-base break-all">santoshkumarshah266@gmail.com</p>
               </div>
 
               <div>
-                <h3 className="text-[#FFBB33] font-bold mb-2">PHONE</h3>
-                <p className="text-gray-400">9845067005</p>
+                <h3 className="text-[#FFBB33] font-bold mb-2 text-sm md:text-base">PHONE</h3>
+                <p className="text-gray-400 text-sm md:text-base">9845067005</p>
               </div>
 
               <div>
-                <h3 className="text-[#FFBB33] font-bold mb-2">LOCATION</h3>
-                <p className="text-gray-400">
+                <h3 className="text-[#FFBB33] font-bold mb-2 text-sm md:text-base">LOCATION</h3>
+                <p className="text-gray-400 text-sm md:text-base">
                   Bhotea Bal<br />
                   Kathmandu, Nepal
                 </p>
               </div>
 
               <div>
-                <h3 className="text-[#FFBB33] font-bold mb-2">FOLLOW US</h3>
+                <h3 className="text-[#FFBB33] font-bold mb-2 text-sm md:text-base">FOLLOW US</h3>
                 <div className="flex space-x-4 mt-4">
                   <a
                     href="#"
@@ -89,9 +89,9 @@ const Contact = () => {
           </div>
 
           <div data-aos="fade-left">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
               <div>
-                <label htmlFor="name" className="block text-[#FFBB33] font-bold mb-2">
+                <label htmlFor="name" className="block text-[#FFBB33] font-bold mb-2 text-sm md:text-base">
                   NAME
                 </label>
                 <input
@@ -101,12 +101,12 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full bg-[#1a1a1a] border border-[#FFBB33]/20 px-4 py-3 text-white focus:outline-none focus:border-[#FFBB33] transition-colors duration-300 rounded"
+                  className="w-full bg-[#1a1a1a] border border-[#FFBB33]/20 px-3 md:px-4 py-2 md:py-3 text-white text-sm md:text-base focus:outline-none focus:border-[#FFBB33] transition-colors duration-300 rounded"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-[#FFBB33] font-bold mb-2">
+                <label htmlFor="email" className="block text-[#FFBB33] font-bold mb-2 text-sm md:text-base">
                   EMAIL
                 </label>
                 <input
@@ -116,12 +116,12 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full bg-[#1a1a1a] border border-[#FFBB33]/20 px-4 py-3 text-white focus:outline-none focus:border-[#FFBB33] transition-colors duration-300 rounded"
+                  className="w-full bg-[#1a1a1a] border border-[#FFBB33]/20 px-3 md:px-4 py-2 md:py-3 text-white text-sm md:text-base focus:outline-none focus:border-[#FFBB33] transition-colors duration-300 rounded"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-[#FFBB33] font-bold mb-2">
+                <label htmlFor="message" className="block text-[#FFBB33] font-bold mb-2 text-sm md:text-base">
                   MESSAGE
                 </label>
                 <textarea
@@ -130,14 +130,14 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows="6"
-                  className="w-full bg-[#1a1a1a] border border-[#FFBB33]/20 px-4 py-3 text-white focus:outline-none focus:border-[#FFBB33] transition-colors duration-300 resize-none rounded"
+                  rows="5"
+                  className="w-full bg-[#1a1a1a] border border-[#FFBB33]/20 px-3 md:px-4 py-2 md:py-3 text-white text-sm md:text-base focus:outline-none focus:border-[#FFBB33] transition-colors duration-300 resize-none rounded"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-[#FFBB33] text-black px-8 py-3 font-bold hover:scale-105 hover:shadow-lg hover:shadow-[#FFBB33]/50 transition-all duration-300 rounded"
+                className="w-full bg-[#FFBB33] text-black px-6 md:px-8 py-2.5 md:py-3 text-sm md:text-base font-bold hover:scale-105 hover:shadow-lg hover:shadow-[#FFBB33]/50 transition-all duration-300 rounded"
               >
                 SEND MESSAGE
               </button>
